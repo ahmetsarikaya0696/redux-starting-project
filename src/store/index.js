@@ -4,7 +4,7 @@ const counterReducer = (state = { counter: 0 }, action) => {
   if (action.type === "increment") {
     console.log("increment counter: " + state.counter);
     return {
-      counter: state.counter + 1,
+      counter: state.counter + action.amount,
     };
   }
 
